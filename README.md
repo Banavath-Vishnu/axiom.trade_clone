@@ -1,36 +1,173 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Axiom Trade — Token Discovery Table (Pixel-Perfect Replica)
 
-## Getting Started
+A pixel-perfect, high-performance replica of Axiom Trade’s Token Discovery (Pulse) table, built using Next.js 14, TypeScript, Tailwind, Redux Toolkit, React Query, and Radix UI/shadcn.
+Includes real-time mock price updates, smooth transitions, loading states, and complete responsive behaviour down to 320px.
 
-First, run the development server:
+🚀 Live Demo & Video
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
+Vercel Deployment: <your vercel url>
+YouTube Demo (1–2 min): <your video link>
+
+📦 Tech Stack
+
+Next.js 14 – App Router
+
+TypeScript (strict mode)
+
+Tailwind CSS
+
+Redux Toolkit (complex state)
+
+React Query (data + caching)
+
+Radix UI + shadcn/ui (accessible UI primitives)
+
+Playwright (E2E + visual regression)
+
+ESLint + Prettier
+
+🎯 Core Features
+UI / Interactions
+
+All token columns: New Pairs, Final Stretch, Migrated
+
+Pixel-perfect recreation (≤2px variance)
+
+Sorting (multi-column), hover effects, click actions
+
+Popover, tooltip, modal using accessible Radix primitives
+
+Smooth micro-interactions and no layout shifts
+
+Real-Time Updates
+
+Mock WebSocket server
+
+Live price updates with green/red color transitions
+
+Stable, memoized rows (no re-renders / jank)
+
+Loading & Error States
+
+Skeleton loading
+
+Shimmer placeholders
+
+Progressive row mounting
+
+Error boundaries and retry logic
+
+Performance
+
+≥90 Lighthouse on mobile & desktop
+
+Memoized components
+
+Partial hydration and dynamic imports
+
+No unnecessary re-renders
+
+<100ms interaction latency
+
+Responsive
+
+Fully responsive down to 320px
+
+Collapsed mobile table layout
+
+Auto-layout screenshots included in /assets/screenshots
+
+📁 Project Structure (Atomic Architecture)
+src/
+  app/
+    pulse/
+      page.tsx
+  components/
+    ui/
+    table/
+    popovers/
+    modals/
+    skeletons/
+  hooks/
+  store/
+  lib/
+  styles/
+tests/
+  unit/
+  e2e/
+  visual/
+assets/
+  screenshots/
+  reports/
+
+
+Atoms → Molecules → Organisms
+
+DRY, reusable, documented, strongly typed components
+
+🧪 Testing
+Unit Tests
+
+React Testing Library + Jest
+
+E2E Tests
+
+Playwright (sorting, modal interactions, responsive behaviour)
+
+Visual Regression
+
+Playwright screenshot diff tests
+
+≤2px tolerance
+
+Baseline images included
+
+📈 Lighthouse Performance
+
+90+ score on Performance, Accessibility, Best Practices, SEO
+
+Reports available in /assets/reports
+
+🛠️ Getting Started
+Install
+pnpm install
+
+Development
 pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build
+pnpm build
+pnpm start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run Tests
+pnpm test
+pnpm test:e2e
+pnpm test:visual
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Deployment (Vercel)
 
-## Learn More
+Connect GitHub repo
 
-To learn more about Next.js, take a look at the following resources:
+Build command: pnpm build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Output directory: .next
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📌 Submission Checklist
 
-## Deploy on Vercel
+ GitHub Repo (public, clean commits)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ Vercel Deployment URL added to README
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ Public YouTube demo (1–2 min)
+
+ Responsive snapshots added to /assets/screenshots
+
+ Visual regression baseline included
+
+ Lighthouse ≥ 90 (mobile + desktop)
+
+ All interactions + real-time updates working
+
+📄 License
+
+MIT — free to use, modify, and distribute.
